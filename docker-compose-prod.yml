@@ -12,9 +12,7 @@ services:
     networks:
       - mynet
 
-  backend-prod:
-    ports:
-      - 3001:3001
+  backend:
     build:
       context: .
       dockerfile:
