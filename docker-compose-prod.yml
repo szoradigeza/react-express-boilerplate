@@ -1,11 +1,25 @@
 version: "3.7"
 
 services:
-  react-prod:
-    container_name: react-prod
+  frontend-prod:
     build:
       context: .
       dockerfile:
         ./frontend/Dockerfile-prod
     ports:
-      - "3000:80"
+      - 3000:80
+    networks:
+      - mynet
+
+  backend-prod:
+    ports:
+      - 3001:3001
+    build:
+      context: .
+      dockerfile:
+        ./backend/Dockerfile-prod
+    networks:
+      - mynet
+
+networks:
+  mynet:
