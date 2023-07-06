@@ -2,7 +2,7 @@
 
 ## What is this?
 
-The minimalist template which uses:
+A minimalist template which uses:
 
 - [Vite](https://vitejs.dev): Next Generation Frontend Tooling
 - [React](https://reactjs.org): A JavaScript library for building user interfaces
